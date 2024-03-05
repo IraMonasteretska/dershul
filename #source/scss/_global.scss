@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: inherit !important;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    max-width: 100vw;
+    cursor: default;
+    color: #191919;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main {
+    flex: 1 1 auto;
+    transition: .4s ease;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(min-width:1500px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1444px;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+h2, h3 {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #222944;
+    text-transform: uppercase;
+}
+
+.violetbtn {
+    max-width: 222px;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 34px;
+    background: #564999;
+    border: 2px solid #564999 !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+       
+        background: transparent;
+        color: #222944;
+
+    }
+}
+
+.sectsubtitle {
+    font-family: "Arapey", serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #9884FF;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media(max-width:1199.8px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2,h3 {
+        font-size: 32px;
+    }
+
+    .sectsubtitle {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:575.8px) {
+    h1 {
+        font-size: 30px;
+    }  
+
+    .sectsubtitle {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    h2, h3 {
+        font-size: 25px;
+    }
+}
