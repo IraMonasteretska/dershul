@@ -90,7 +90,8 @@ h1 {
     line-height: 120%;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-size: 40px;
     line-height: 120%;
     font-weight: 600;
@@ -115,7 +116,7 @@ h2, h3 {
     transition: 0.3s;
 
     &:hover {
-       
+
         background: transparent;
         color: #222944;
 
@@ -137,7 +138,8 @@ h2, h3 {
         font-size: 42px;
     }
 
-    h2,h3 {
+    h2,
+    h3 {
         font-size: 32px;
     }
 
@@ -149,14 +151,47 @@ h2, h3 {
 @media(max-width:575.8px) {
     h1 {
         font-size: 30px;
-    }  
+    }
 
     .sectsubtitle {
         font-size: 20px;
         margin-bottom: 0;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         font-size: 25px;
     }
 }
+
+@keyframes pulse1 {
+    0% {
+        box-shadow: 0 0 0  rgba(255, 255, 255, .5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0  rgba(255, 255, 255, .5);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        box-shadow: 0 0 0  rgba(86, 73, 153, .5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(86, 73, 153, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0  rgba(86, 73, 153, .5);
+    }
+}
+
+
+
+// animation: pulse1 2s infinite;

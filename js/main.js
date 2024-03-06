@@ -22,18 +22,22 @@ $(document).ready(function () {
             top = $(id).offset().top - 100;
         $('body,html').animate({ scrollTop: top }, 800);
     });
-    
 
-    $('.mobmenu').click(function(){
+    $("footer ul").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 100;
+        $('body,html').animate({ scrollTop: top }, 800);
+    });
+
+
+    $('.mobmenu').click(function () {
         $('.mobmenusect').addClass('showmenu');
     })
 
-    $('.closemenu').click(function(){
+    $('.closemenu').click(function () {
         $('.mobmenusect').removeClass('showmenu');
     })
-    
-    
-
 
 });
 
