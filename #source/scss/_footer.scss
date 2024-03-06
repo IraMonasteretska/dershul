@@ -103,6 +103,11 @@ footer.footer {
     }
 }
 
+.footer__top .violetbtn {
+    &:hover {
+        animation: pulse1 2s infinite;
+    }
+}
 
 @media(max-width:1199.8px) {
     .footer__logo {
