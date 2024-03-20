@@ -457,6 +457,10 @@
         padding: 100px 0;
     }
 
+    .nav-tabs .nav-item {
+        max-width: 137px;
+    }
+
 }
 
 @media(max-width:1199.8px) {
@@ -719,6 +723,10 @@
 
     .contactsection .contactsection__bg2 {
         display: none;
+    }
+
+    .nav-tabs .nav-link img {
+        max-height: 24px;
     }
 }
 
