@@ -14,7 +14,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: #222944;
+        background: #47558B;
         opacity: 0.82;
     }
 }
@@ -147,7 +147,7 @@
     h4 {
         font-size: 25px;
         line-height: 120%;
-        color: #222944;
+        color: #3E4560;
         font-weight: 600;
         margin-bottom: 35px;
         text-transform: capitalize;
@@ -227,7 +227,7 @@
 // contact section
 
 .contactsection {
-    padding: 148px 0 115px;
+    padding: 158px 0 115px;
     position: relative;
 
     h3 {
@@ -258,7 +258,8 @@
     max-width: 1295px;
     margin: 0 auto;
     box-shadow: 0 5px 31px rgba(#000, 0.1);
-
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .contform {
@@ -296,7 +297,7 @@
         height: 50px;
         width: 100%;
         background: #fff;
-        border: 1px solid #85858C;
+        border: 1px solid rgba(133, 133, 140, 0.7);
         padding-left: 20px;
         font-size: 16px;
         border-radius: 30px;
@@ -311,7 +312,7 @@
         height: 98px;
         width: 100%;
         background: #fff;
-        border: 1px solid #85858C;
+        border: 1px solid rgba(133, 133, 140, 0.7);
         padding-left: 20px;
         font-size: 16px;
         border-radius: 15px;
@@ -430,6 +431,73 @@
 .contwrapper__leftinfo ul li a {
     &:hover {
         opacity: 0.7;
+    }
+}
+
+.nav-link {
+    flex-wrap: wrap;
+}
+
+.tabbtnlink {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-decoration: underline;
+    color: #222A3D;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.nav-tabs .nav-link {
+    padding: 5px 10px;
+
+    img {
+        max-height: 36px;
+    }
+}
+
+.livebtn {
+    margin-top: 40px;
+    display: flex;
+    max-width: 225px;
+    min-height: 50px;
+    padding-left: 38px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #453888;
+    border-radius: 30px;
+    color: #453888;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+
+    span {
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        height: 50px;
+        width: 50px;
+        background: #453888;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:hover {
+        background: #fff;
+        color: #453888;
+        
+        span {
+            animation: pulse2 2s infinite;
+        }
+        
     }
 }
 

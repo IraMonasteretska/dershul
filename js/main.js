@@ -39,5 +39,9 @@ $(document).ready(function () {
         $('.mobmenusect').removeClass('showmenu');
     })
 
+    $('.header.header nav ul li a').click(function(){
+        $('.mobmenusect').removeClass('showmenu');
+    });
+
 });
 
