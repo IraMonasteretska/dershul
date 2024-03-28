@@ -576,6 +576,10 @@
     .contform {
         padding: 60px 50px;
     }
+
+    .herosection {
+        height: 400px;
+    }
 }
 
 @media(max-width:991.8px) {
@@ -630,12 +634,18 @@
         display: none;
     }
 
+    .herosection {
+        height: 450px;
+    }
+
 }
 
 @media(max-width:575.8px) {
     .herosection {
         padding-bottom: 50px;
-        min-height: 100vh;
+        // min-height: 100vh;
+        height: auto;
+        min-height: 440px;
     }
 
     .herosection__box .subtitle {
