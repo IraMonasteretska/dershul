@@ -67,12 +67,12 @@
 
 // services
 .services {
-    padding: 80px 25px 190px;
+    padding: 40px 25px 190px;
     position: relative;
 
     h2 {
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
 
     .bgel1 {
@@ -501,6 +501,39 @@
     }
 }
 
+.showpbox {
+    padding: 20px 0;
+    background: #F0F4F7;
+
+    .showpbox__cont {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        p {
+            width: 100%;
+            max-width: calc(100% - 222px);
+            flex: 0 0 calc(100% - 222px);
+            margin: 0;
+            color: #222944;
+            font-size: 25px;
+            font-weight: 700;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        a {
+            width: 100%;
+            max-width: 222px;
+            flex: 0 0 222px;
+
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}
+
 
 @media(max-width:1499.8px) {
 
@@ -527,6 +560,10 @@
 
     .nav-tabs .nav-item {
         max-width: 137px;
+    }
+
+    .showpbox .showpbox__cont p {
+        font-size: 22px;
     }
 
 }
@@ -702,6 +739,7 @@
 
     .tab-pane h4 {
         font-size: 20px;
+        margin-bottom: 15px;
     }
 
     .tab-pane p {
@@ -809,6 +847,26 @@
 
     .nav-tabs .nav-link img {
         max-height: 24px;
+    }
+
+    .showpbox .showpbox__cont p {
+        max-width: 100%;
+        flex: 0 0 100%;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .showpbox .showpbox__cont a {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .services {
+        padding-top: 30px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
     }
 }
 
