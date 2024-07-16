@@ -57,7 +57,7 @@
 
     .violetbtn {
         margin-top: 30px;
-        
+
         &:hover {
             animation: pulse1 2s infinite;
             border-color: #fff !important;
@@ -493,11 +493,11 @@
     &:hover {
         background: #fff;
         color: #453888;
-        
+
         span {
             animation: pulse2 2s infinite;
         }
-        
+
     }
 }
 
@@ -533,6 +533,11 @@
         }
     }
 }
+
+
+
+
+
 
 
 @media(max-width:1499.8px) {
@@ -795,7 +800,7 @@
     }
 
     .contwrapper {
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         overflow: hidden;
     }
